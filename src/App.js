@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import styled from 'styled-components';
 import recognizeMic from 'watson-speech/speech-to-text/recognize-microphone';
+import image from './logo.png';
+
+const Button = styled.button`
+  background-color: #e7e7e7;
+  border: none;
+  color: #555555;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+  margin-bottom: 50px
+  font-size: 24px;
+  margin-top: 50px;`;
 
 class App extends Component {
   constructor() {
@@ -40,9 +54,9 @@ class App extends Component {
     return (
 
       <div className="App">
-        <button onClick={this.onListenClick.bind(this)}>Listen to microphone</button>
+        <div className="logo"><img src={require("./logo.png")}/></div>
+        <Button onClick={this.onListenClick.bind(this)}>Listen to your heart</Button>
         <div style={{fontSize: '40px'}}>{this.state.text}</div>
-
       </div>
     );
   }

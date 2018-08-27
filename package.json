@@ -11,6 +11,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5",
+    "styled-components": "^3.4.5",
     "vcap_services": "^0.5.1",
     "watson-developer-cloud": "^3.9.0",
     "watson-speech": "^0.35.0"
