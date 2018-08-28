@@ -55,8 +55,8 @@ class App extends Component {
 
       <div className="App">
         <div className="logo"><img src={require("./logo.png")}/></div>
-        <Button onClick={this.onListenClick.bind(this)}>Listen to your heart</Button>
-        <div style={{fontSize: '40px'}}>{this.state.text}</div>
+        <Button onClick={this.onListenClick.bind(this)}>Ouvir</Button>
+        <div className='Texto'>{this.state.text}</div>
       </div>
     );
   }
