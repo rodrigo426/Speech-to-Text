@@ -39,8 +39,8 @@ app.use(cors())
 var sttAuthService = new watson.AuthorizationV1(
   Object.assign(
     {
-      username: process.env.SPEECH_TO_TEXT_USERNAME || "864fd094-e0a8-4e00-8c67-a46721e5a4e3", // or hard-code credentials here
-      password: process.env.SPEECH_TO_TEXT_PASSWORD || "g7nUl7smWRAU"
+      username: process.env.SPEECH_TO_TEXT_USERNAME, // or hard-code credentials here
+      password: process.env.SPEECH_TO_TEXT_PASSWORD
     },
     vcapServices.getCredentials('speech_to_text') // pulls credentials from environment in bluemix, otherwise returns {}
   )
